@@ -6,7 +6,7 @@
     <title>Hans362</title>
     <meta http-equiv="x-dns-prefetch-control " content="on">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge, chrome=1">
-    <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+    <meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1"/>
     <meta name="description" content="Hans362 's Home | Personal HomePage | Hans362 的个人主页">
     <link rel="apple-touch-icon" sizes="180x180" href="https://cdn.jsdelivr.net/gh/hans362/image-hosting@master/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="https://cdn.jsdelivr.net/gh/hans362/image-hosting@master/favicon-32x32.png">
@@ -21,16 +21,18 @@
     <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 </head>
 
-<body style="background-image: url('')">
+<body style="background-image: url('https://cdn.jsdelivr.net/gh/Dreamer-Paul/Sweet@master/static/background-3.jpg')">
+
 <div id="loader">
     <figure>
         <img src="https://cdn.jsdelivr.net/gh/hans362/image-hosting@master/2021/03/13/1368931.jpg"/>
     </figure>
 </div>
+
 <main>
     <div class="content">
         <figure class="me">
-            <img class="avatar" src="./static/avatar.jpg"/>
+            <img class="avatar" src="https://cdn.jsdelivr.net/gh/hans362/image-hosting@master/2021/03/13/1368931.jpg"/>
             <h2 class="name">Hans362</h2>
         </figure>
         <section id="main" class="active">
@@ -96,6 +98,7 @@ else{
         </div>
     </div>
 </main>
+
 <footer>
     <p>© 2017-<?php echo date(Y)?> By <a href="https://hans362.cn">Hans362</a> & Based on <a href="https://paugram.com">Dreamer-Paul</a>'s design.</p>
 </footer>
@@ -103,4 +106,5 @@ else{
 <script src="https://cdn.jsdelivr.net/gh/Dreamer-Paul/Sweet@master/static/paul.js"></script>
 
 </body>
+
 </html>
