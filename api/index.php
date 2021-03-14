@@ -100,7 +100,7 @@ else{
 </main>
 
 <footer>
-    <p>© 2017-<?php echo date(Y);?> By <a href="https://hans362.cn">Hans362</a> & Based on <a href="https://paugram.com">Dreamer-Paul</a>'s design.</p>
+    <p>© 2017-2021 By <a href="https://hans362.cn">Hans362</a> & Based on <a href="https://paugram.com">Dreamer-Paul</a>'s design.</p>
 </footer>
 
 <script src="https://cdn.jsdelivr.net/gh/Dreamer-Paul/Sweet@master/static/paul.js"></script>
