@@ -67,7 +67,7 @@
                     echo "<a>博客连接失败<span class='meta'>请检查服务状态</span></a>";
                 }
                 ?>
-                <p><a href="https://github.com/hans362/repositories" target="_blank" style="color: #3498db;">> Visit My Blog...</a></p>
+                <p><a href="https://blog.hans362.cn" target="_blank" style="color: #3498db;">> Visit My Blog...</a></p>
             </section>
             <section id="products">
                 <?php
