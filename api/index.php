@@ -21,7 +21,7 @@
     <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.2/css/all.min.css" rel="stylesheet" type="text/css">
 </head>
 
-<body style="background-image: url('https://cdn.jsdelivr.net/gh/Dreamer-Paul/Sweet@master/static/background-3.jpg')">
+<body style="background-image: url('https://cdn.jsdelivr.net/gh/hans362/image-hosting@master/2021/03/14/29271811.jpg')">
 
     <div id="loader">
         <figure>
