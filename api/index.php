@@ -45,7 +45,7 @@
         </section>
         <section id="articles">
 <?php
-error_reporting(0);
+//error_reporting(0);
 
 // 设置你的博客 RSS 地址（WordPress、Typecho 均可）
 define("BLOG_URL", "https://blog.hans362.cn/atom.xml");
@@ -100,7 +100,7 @@ else{
 </main>
 
 <footer>
-    <p>© 2017-<?php echo date(Y)?> By <a href="https://hans362.cn">Hans362</a> & Based on <a href="https://paugram.com">Dreamer-Paul</a>'s design.</p>
+    <p>© 2017-<?php echo date(Y);?> By <a href="https://hans362.cn">Hans362</a> & Based on <a href="https://paugram.com">Dreamer-Paul</a>'s design.</p>
 </footer>
 
 <script src="https://cdn.jsdelivr.net/gh/Dreamer-Paul/Sweet@master/static/paul.js"></script>
