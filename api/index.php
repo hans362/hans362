@@ -53,7 +53,7 @@
                 define("BLOG_URL", "https://blog.hans362.cn/atom.xml");
                 $file = simplexml_load_file(BLOG_URL);
                 if (isset($file)) {
-                    for ($i = 0; $i < 8; $i++) {
+                    for ($i = 0; $i < 6; $i++) {
                         $timestamp = strtotime($file->children()->entry[$i]->published);
                         $timestamp = date("y-m-d", $timestamp);
                         if ($file[$i]) {
@@ -64,9 +64,10 @@
                         }
                     }
                 } else {
-                    echo "<a>博客连接失败<span class='meta'>请检查</span></a>";
+                    echo "<a>博客连接失败<span class='meta'>请检查服务状态</span></a>";
                 }
                 ?>
+                <p><a href="https://github.com/hans362/repositories" target="_blank" style="color: #3498db;">> Visit My Blog...</a></p>
             </section>
             <section id="products">
                 <?php
@@ -80,9 +81,19 @@
                     }
                 }
                 ?>
+                <p><a href="https://github.com/hans362/repositories" target="_blank" style="color: #3498db;">> Visit My GitHub...</a></p>
             </section>
             <section id="about">
-                <p>待填坑<a href="" target="_blank">详细阅读</a></p>
+                <p>
+                <?php
+                $tags = "男高中生 / 现居上海 / 蒟蒻 / 轻度社恐 / 死宅 / 退役OIer / 括号不换行 / 骗分过样例 / 暴力出不了奇迹 / 文化课苦手 / 物地生选手 / 摸鱼小能手 / Minecraft玩家 / 伪二刺猿 / Google狂热粉 / VSCode忠粉 / 熟练掌握 / C/C++ / PHP / Node.JS / Python / HTML / CSS / 的拼写";
+                $tagList = explode(" / ",$tags);
+                foreach ($tagList as $tag) {
+                    echo '<img src="https://img.shields.io/badge/-' . $tag . '-blue?style=flat-square"> ';
+                }
+                ?>
+                </p>
+                <p><a href="https://blog.hans362.cn/about" target="_blank" style="color: #3498db;">> Read More On Blog...</a></p>
             </section>
             <div class="actions">
                 <div class="item home active">
