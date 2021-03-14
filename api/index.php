@@ -18,7 +18,7 @@
     <meta name="msapplication-config" content="https://cdn.jsdelivr.net/gh/hans362/image-hosting@master/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
     <link href="https://cdn.jsdelivr.net/gh/Dreamer-Paul/Sweet@master/static/paul.css" rel="stylesheet" type="text/css">
-    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.2/css/all.min.css" rel="stylesheet" type="text/css">
 </head>
 
 <body style="background-image: url('https://cdn.jsdelivr.net/gh/Dreamer-Paul/Sweet@master/static/background-3.jpg')">
@@ -33,18 +33,18 @@
         <div class="content">
             <figure class="me">
                 <img class="avatar" src="https://cdn.jsdelivr.net/gh/hans362/image-hosting@master/2021/03/13/1368931.jpg" />
-                <h2 class="name">Hans362</h2>
+                <h2 class="name" style="font-weight: normal;">Hans362</h2>
             </figure>
             <section id="main" class="active">
-                <a href="https://blog.hans362.cn"><i class="fa fa-wordpress"></i><span class="title">博客</span></a>
-                <a href="https://lab.hans362.cn" target="_blank"><i class="fa fa-flask"></i><span class="title">实验室</span></a>
-                <a href="https://status.hans362.cn" target="_blank"><i class="fa fa-check-circle"></i><span class="title">服务状态</span></a>
-                <a href="https://t.me/hans362" target="_blank"><i class="fa fa-telegram"></i><span class="title">Telegram</span></a>
-                <a href="https://t.me/Hans362sTeleblog" target="_blank"><i class="fa fa-paper-plane"></i><span class="title">Teleblog</span></a>
-                <a href="https://twitter.com/Milk_362" target="_blank"><i class="fa fa-twitter"></i><span class="title">Twitter</span></a>
-                <a href="https://github.com/hans362" target="_blank"><i class="fa fa-github"></i><span class="title">GitHub</span></a>
-                <a href="https://space.bilibili.com/66745436" target="_blank"><i class="fa fa-flag"></i><span class="title">哔哩哔哩</span></a>
-                <a href="mailto:i@hans362.cn" target="_blank"><i class="fa fa-envelope"></i><span class="title">邮箱</span></a>
+                <a href="https://blog.hans362.cn" target="_blank"><i class="fas fa-blog"></i><span class="title">博客</span></a>
+                <a href="https://lab.hans362.cn" target="_blank"><i class="fas fa-flask"></i><span class="title">实验室</span></a>
+                <a href="https://status.hans362.cn" target="_blank"><i class="fas fa-check-circle"></i><span class="title">服务状态</span></a>
+                <a href="https://t.me/hans362" target="_blank"><i class="fab fa-telegram"></i><span class="title">Telegram</span></a>
+                <a href="https://t.me/Hans362sTeleblog" target="_blank"><i class="fab fa-telegram-plane"></i><span class="title">Teleblog</span></a>
+                <a href="https://twitter.com/Milk_362" target="_blank"><i class="fab fa-twitter"></i><span class="title">Twitter</span></a>
+                <a href="https://github.com/hans362" target="_blank"><i class="fab fa-github"></i><span class="title">GitHub</span></a>
+                <a href="https://space.bilibili.com/66745436" target="_blank"><i class="fas fa-flag"></i><span class="title">哔哩哔哩</span></a>
+                <a href="mailto:i@hans362.cn" target="_blank"><i class="fas fa-envelope"></i><span class="title">邮箱</span></a>
             </section>
             <section id="articles">
                 <?php
@@ -85,31 +85,31 @@
             </section>
             <section id="about">
                 <p>
-                <?php
-                $tags = "男高中生 / 现居上海 / 蒟蒻 / 轻度社恐 / 死宅 / 退役OIer / 括号不换行 / 骗分过样例 / 暴力出不了奇迹 / 文化课苦手 / 物地生选手 / 摸鱼小能手 / Minecraft玩家 / 伪二刺猿 / Google狂热粉 / VSCode忠粉 / 熟练掌握 / C/C++ / PHP / Node.JS / Python / HTML / CSS / 的拼写";
-                $tagList = explode(" / ",$tags);
-                foreach ($tagList as $tag) {
-                    echo '<img src="https://img.shields.io/badge/-' . $tag . '-blue?style=flat-square"> ';
-                }
-                ?>
+                    <?php
+                    $tags = "男高中生 / 现居上海 / 蒟蒻 / 轻度社恐 / 死宅 / 退役OIer / 括号不换行 / 骗分过样例 / 暴力出不了奇迹 / 文化课苦手 / 物地生选手 / 摸鱼小能手 / Minecraft玩家 / 伪二刺猿 / Google狂热粉 / VSCode忠粉 / 熟练掌握 / C/C++ / PHP / Node.JS / Python / HTML / CSS / 的拼写";
+                    $tagList = explode(" / ", $tags);
+                    foreach ($tagList as $tag) {
+                        echo '<img src="https://img.shields.io/badge/-' . $tag . '-blue?style=flat-square"> ';
+                    }
+                    ?>
                 </p>
                 <p><a href="https://blog.hans362.cn/about" target="_blank" style="color: #3498db;">> Read More On Blog...</a></p>
             </section>
             <div class="actions">
                 <div class="item home active">
-                    <i class="fa fa-star"></i>
+                    <i class="fas fa-star"></i>
                     <span class="title">首页</span>
                 </div>
                 <div class="item article">
-                    <i class="fa fa-book"></i>
+                    <i class="fas fa-book"></i>
                     <span class="title">文章</span>
                 </div>
                 <div class="item product">
-                    <i class="fa fa-trophy"></i>
+                    <i class="fas fa-trophy"></i>
                     <span class="title">作品</span>
                 </div>
                 <div class="item about">
-                    <i class="fa fa-graduation-cap"></i>
+                    <i class="fas fa-graduation-cap"></i>
                     <span class="title">关于</span>
                 </div>
             </div>
