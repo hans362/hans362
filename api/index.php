@@ -17,7 +17,7 @@
     <meta name="msapplication-TileColor" content="#00aba9">
     <meta name="msapplication-config" content="https://cdn.jsdelivr.net/gh/hans362/image-hosting@master/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
-    <link href="https://cdn.jsdelivr.net/gh/Dreamer-Paul/Sweet@266eedd/static/paul.css" rel="stylesheet" type="text/css">
+    <link href="https://cdn.jsdelivr.net/gh/Dreamer-Paul/Sweet@d7a78c4/static/paul.css" rel="stylesheet" type="text/css">
     <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.2/css/all.min.css" rel="stylesheet" type="text/css">
 </head>
 
@@ -56,9 +56,11 @@
                     for ($i = 0; $i < 6; $i++) {
                         $timestamp = strtotime($file->children()->entry[$i]->published);
                         $timestamp = date("y-m-d", $timestamp);
-                        if ($file[$i] && !empty($file->children()->entry[$i]->children()->title)) {
-                            echo '<a href="' . $file->children()->entry[$i]->children()->link->attributes()['href'] . '" target="_blank">' . $file->children()->entry[$i]->children()->title . '<span class="meta">' . $timestamp . "</span></a>";
-                            echo "\n";
+                        if ($file[$i]) {
+                            if (!empty($file->children()->entry[$i]->children()->title)) {
+                                echo '<a href="' . $file->children()->entry[$i]->children()->link->attributes()['href'] . '" target="_blank">' . $file->children()->entry[$i]->children()->title . '<span class="meta">' . $timestamp . "</span></a>";
+                                echo "\n";
+                            }
                         } else {
                             break;
                         }
@@ -120,7 +122,7 @@
         <p>© 2017-2021 By <a href="https://hans362.cn">Hans362</a> & Based on <a href="https://paugram.com">Dreamer-Paul</a>'s design.</p>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/gh/Dreamer-Paul/Sweet@266eedd/static/paul.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/Dreamer-Paul/Sweet@d7a78c4/static/paul.js"></script>
 
 </body>
 
