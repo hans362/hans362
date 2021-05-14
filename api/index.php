@@ -56,7 +56,7 @@
                     for ($i = 0; $i < 6; $i++) {
                         $timestamp = strtotime($file->children()->entry[$i]->published);
                         $timestamp = date("y-m-d", $timestamp);
-                        if ($file[$i]) {
+                        if ($file[$i] && !empty($file->children()->entry[$i]->children()->title)) {
                             echo '<a href="' . $file->children()->entry[$i]->children()->link->attributes()['href'] . '" target="_blank">' . $file->children()->entry[$i]->children()->title . '<span class="meta">' . $timestamp . "</span></a>";
                             echo "\n";
                         } else {
